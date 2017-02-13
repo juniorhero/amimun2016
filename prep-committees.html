@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+
+
+<head>
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" media="all" href="style.css">
+	<link rel="icon" type="images/x-icon" href="images/title.ico">
+	
+	<!-- PHP Includes -->
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60290601-1', 'auto');
+  ga('send', 'pageview');
+
+</script>	
+	<!-- Meta & Site Info -->
+	<title>AMIMUN 2016</title>
+	
+	<meta name="description" content="Amity International Model United Nations">
+	<meta name="theme-color" content="#01458e">
+	<meta id="viewport" name="viewport" content="width=device-width">
+	<!-- Enforces minimum width of viewport to 600 -->
+	<script>
+		window.onload = function(){
+			if(window.innerWidth<600){
+				console.log('viewport fixed at 600');
+				var viewport = document.getElementById('viewport');
+				viewport.setAttribute('content','width=600');
+				document.getElementById('radcam-slide').setAttribute("style","height:"+window.innerHeight+"px");
+			}
+		}
+	</script>
+	
+	
+	<script>
+	
+	$(function() { //When the document loads
+  $("#menu1").bind("click", function() {
+    $(window).scrollTop($("#ICJ").offset().top); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
+});
+
+</script>
+	<!-- JS -->
+	<script src = "js/functions.js"> </script>
+	<script src = "js/modernizr.js"> </script>
+	
+	
+	<!-- jQuery -->
+	<script src="../ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"> </script>
+	
+	<!-- Smooth Scrolling Script -->
+	<script>
+		$(function() {
+			$('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html,body').animate({
+							scrollTop: target.offset().top
+						}, 1000);
+						return false;
+					}
+				}
+			});
+		});
+	</script>
+	
+	<!-- Pre-load Images -->
+	<img src="images/menu-logo-blue.png" style="display: none;">
+	<img src="images/pdf_blue.png" style="display: none;">
+</head>
+
+<nav id='menubar'>
+	<div class = 'menuwrapper'>
+		
+		<a href="index.html" target="_parent">
+			<img src = "images/menu-logo.png" width="59px" height="50px" onMouseOver="blueLogo(this);" onMouseOut="whiteLogo(this);">
+		</a>
+		
+		
+		
+        <ul class="menulist">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li class="dropdownitem">
+                <label>About Us</label>
+
+
+                <ul class="dropdownlist">
+                    <li><a href="about-home.html">About AMIMUN</a></li>
+
+                    <li><a href="about-amity.html">About Amity</a></li>
+
+                    <li><a href="about-msg.html">Messages</a></li>
+
+
+
+                    <li><a href="about-advisory.html">Advisory Board</a></li>
+
+
+                    <li><a href="about-secretariat.html">Secretariat</a></li>
+                </ul>
+
+
+            </li>
+
+            <li class="dropdownitem">
+                <label>Apply</label>
+                <ul class="dropdownlist">
+                    <li><a href="DelegateForm.aspx">Delegate application</a></li>
+                    <li><a href="IPForm.aspx">International Press application</a></li>
+                </ul>
+
+
+            </li>
+
+            <li class="dropdownitem">
+                <label>Committees</label>
+                <ul class="dropdownlist">
+
+
+                    <li><a href="prep-committees.html#3" onClick="toggle('node-3')" onClick="committeeClick('node-3')">Disarmament and International Security Committee</a></li>
+
+
+                    <li><a href="prep-committees.html#7" onClick="toggle('node-7')" onClick="committeeClick('node-7')">Economic and Financial Committee</a></li>
+
+                    <li><a href="prep-committees.html#4" onClick="toggle('node-4')" onClick="committeeClick('node-4')">Social, Humanitarian and Cultural Committee</a></li>
+                    <li><a href="prep-committees.html#6" onClick="toggle('node-6')" onClick="committeeClick('node-6')">United Nations High Commission for Refugees</a></li>
+
+                    <li>
+                        <a href="prep-committees.html#1" onClick="toggle('node-1')" onClick="committeeClick('node-1')">
+                            African Union - Peace and Security Council
+                        </a>
+                    </li>
+
+
+                    <li><a href="prep-committees.html#2" onClick="toggle('node-2')" onClick="committeeClick('node-2')">Organisation of Islamic Cooperation</a></li>
+
+
+                    <li><a href="prep-committees.html#5" onClick="toggle('node-5')" onClick="committeeClick('node-5')">United Nations Security Council</a></li>
+
+
+
+
+
+
+
+                </ul>
+            </li>
+
+            <li class="dropdownitem">
+                <label>Resources</label>
+                <ul class="dropdownlist">
+                    <li><a href="allot.html">Allotments</a></li> <li><a href="bank.html">Payment Details</a></li>
+
+                    <li><a href="background-guide.html">Background Guides</a></li>
+
+                    <li><a href="venue.html">Venue</a></li>
+
+                    <li><a href="schedule.html">Schedule</a></li>
+
+                </ul>
+
+            </li>
+
+            <li>
+                <a href="club.html">AMIMUN Club</a>
+            </li>
+
+            <li><a href="contact.html">Contact Us</a></li>
+
+        </ul>	
+		
+	</div>
+</nav>							<body onLoad="stretch_footer(); count(); resizeCommitteeWrapper(); handleCommitteeClick();" onresize = "stretch_footer(); resizeCommitteeWrapper()" style="background: url('images/backgrounds/background4.jpg');">
+<section class = 'oxwrapper'>
+
+	<div class="oxcontent">
+
+		<h1> Committees </h1>
+		
+		<h4>2016 Committees</h4>
+
+		
+		
+		<p>
+			
+		</p>
+			
+		
+        <div id="GeneralAssembly">
+		
+		<ul class="committee-list">
+		
+		
+		 <a class="anchor" id="3"></a><li>		<a style="cursor:pointer" onClick="toggle('node-3')"> United Nations General Assembly - Disarmament and
+
+International Security Committee </a>		<ul class='committee-topics' id='node-3' style='display:none'>      <p class="committee-topics" style="padding: 8px;">
+ 
+ 
+ UNGA - DISEC - The General Assembly (GA) is the main deliberative
+
+of the UN. By Article 10, Chapter IV of the United Nations Charter it is 
+
+mandated to make recommendations to the Member Nations or to the Security 
+
+Council on any matter of international significance or matters relating to all 
+
+the other organs of the UN including admission of new Members Nations to 
+
+the UN, and selection of Members for other organs of the United Nations. 
+
+Every Member Nation of the UN is treated equally in this body by virtue of 
+
+holding one vote.
+
+
+
+
+
+ 
+ </p>
+      
+                                                 <table style="width:100%">
+                                                     <tr>
+                                                         <td><img height="150" src="images/committee_people/NIRJHAR BHATTACHARJEE.jpg" /></img></td>
+                                                         <td><img height="150" src="images/committee_people/SANKALP DIKSHIT.jpg" /></img></td>
+                                                         <td></td>
+                                                     </tr>
+                                                     <tr>
+                                                         <td>Nirjhar Bhattacharjee</td>
+                                                         <td>Sankalp Dikshit</td>
+                                                         
+                                                     </tr>
+                                                     <tr>
+                                                         <td>Chairperson</td>
+                                                         <td>Vice Chairperson</td>
+                                                         
+                                                     </tr>
+                                                 </table>
+
+
+
+
+             
+            
+                  
+            
+            </ul></li>	
+ 
+ <a class="anchor" id="7"></a><li>		<a style="cursor:pointer" onClick="toggle('node-7')"> The Economic And Financial Committee </a>		<ul class='committee-topics' id='node-7' style='display:none'>      <p class="committee-topics" style="padding: 8px;">
+ 
+ 
+
+
+The Economic and Finance Committee (ECOFIN) is a committee within the 
+
+United Nations that solves problems in the area of global finances and 
+
+economics. It is one of the six standing committees of the General Assembly, 
+
+and also referred to as the "Second Committee". 
+
+<p>
+It makes recommendations on means to improve the economic development 
+
+of Member States and maintain the stability of the international financial and 
+
+trade network. The economic issues considered by the Second Committee are 
+
+distinguished from others in that this Committee deals solely with financing 
+
+the economic assistance to Member States. The Second Committee does not 
+
+address social issues that affect development; such issues are considered by 
+
+the other Committees.
+</p>
+
+ 
+ </p>
+            
+            
+                                                                                                                                                     <table style="width:100%">
+                                                                                                                                                         <tr>
+                                                                                                                                                             <td><img height="150" src="images/committee_people/ANIRUDH BHATIA.jpg" /></img></td>
+                                                                                                                                                             <td><img height="150" src="images/committee_people/HARSH THAKKAR.jpg" /></img></td>
+                                                                                                                                                             <td></td>
+                                                                                                                                                         </tr>
+                                                                                                                                                         <tr>
+                                                                                                                                                             <td>Anirudh Bhatia 
+                                                                                                                                                              </td>
+                                                                                                                                                             <td>Harsh Thakkar</td>
+
+                                                                                                                                                         </tr>
+                                                                                                                                                         <tr>
+                                                                                                                                                             <td>President</td>
+                                                                                                                                                             <td>Vice President</td>
+
+                                                                                                                                                         </tr>
+                                                                                                                                                     </table>
+            
+            	</ul></li>	
+ 
+ 
+		
+<a class="anchor" id="4"></a><li>		<a style="cursor:pointer" onClick="toggle('node-4')"> United Nations General Assembly- Social, Humanitarian and Cultural Committee </a>		<ul class='committee-topics' id='node-4' style='display:none'>      <p class="committee-topics" style="padding: 8px;">
+ 
+ 
+As its name suggests, the Social, Humanitarian Cultural Affairs Committee 
+
+specializes in Social, Humanitarian and Cultural Issues. Much of its mandate 
+
+concerns the examination of human rights questions, problems and crises. It 
+
+partakes in a strong collaboration with the Human Rights Council, a 
+
+relatively newly established body. Its analysis is used in the most considerate 
+
+application of the Declaration of Human Rights and the preservation of 
+
+international justice. Some of the topics the Third Committee has dealt with 
+
+in the past include the advancement of women, protection of children, 
+
+indigenous issues, the treatment of refugees, the promotion of fundamental 
+
+freedoms through the elimination of racism and racial discrimination, and the 
+
+promotion of the right to self- determination. SOCHUM has collaborated 
+
+extensively with agencies like UNCEF, UNESCO, UNHCR, and UNODC, 
+
+whose input has been paramount to confronting these severe social issues. 
+
+Much like the other committees in the General Assembly, SOCHUM has 
+
+limited administrative authority, in that it cannot demand certain actions to 
+
+be taken. However, it is vital in analyzing serious social and cultural 
+
+problems, initiating studies and making recommendations pertaining to these 
+
+issues. In the past sixty-seven sessions of the General Assembly, the Third 
+
+Committee has been of prime importance in its contributions to the 
+
+realization of human rights and the reduction of international crime as well as 
+
+a more fruitful international collaboration on social, humanitarian, cultural 
+
+and educational forums.
+
+
+            
+
+                                                                                                                                                                                                                                                            <table style="width:100%">
+                                                                                                                                                                                                                                                                <tr>
+                                                                                                                                                                                                                                                                    <td><img height="150" src="images/committee_people/EKLAVYA MALVAI.jpg" /></img></td>
+                                                                                                                                                                                                                                                                    <td><img height="150" src="images/committee_people/ABHILASHA BANERJI.jpg" /></img></td>
+                                                                                                                                                                                                                                                                    <td></td>
+                                                                                                                                                                                                                                                                </tr>
+                                                                                                                                                                                                                                                                <tr>
+                                                                                                                                                                                                                                                                    <td>
+
+                                                                                                                                                                                                                                                                        Eklavya Malvai
+
+                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                    </td>
+                                                                                                                                                                                                                                                                    <td>Abhilasha Banerji</td>
+
+                                                                                                                                                                                                                                                                </tr>
+                                                                                                                                                                                                                                                                <tr>
+                                                                                                                                                                                                                                                                    <td>Chairperson</td>
+                                                                                                                                                                                                                                                                    <td>Vice Chairperson</td>
+
+                                                                                                                                                                                                                                                                </tr>
+                                                                                                                                                                                                                                                            </table>
+
+
+
+ </p>	</ul></li>	
+ 
+ 
+ <a class="anchor" id="6"></a><li>		<a style="cursor:pointer" onClick="toggle('node-6')"> The Office of the United Nations High Commissioner for Refugees </a>		<ul class='committee-topics' id='node-6' style='display:none'>      <p class="committee-topics" style="padding: 8px;">
+ 
+ 
+
+
+The Office of the United Nations High Commissioner for Refugees was
+
+established on December 14, 1950 by the United Nations General Assembly. 
+
+The agency is mandated to lead and co-ordinate international action to 
+
+protect refugees and resolve refugee problems worldwide. Its primary 
+
+purpose is to safeguard the rights and well-being of refugees. It strives to 
+
+ensure that everyone can exercise the right to seek asylum and find safe 
+
+refuge in another State, with the option to return home voluntarily, integrate 
+
+locally or to resettle in a third country. It also has a mandate to help stateless 
+
+people.
+
+<p>
+
+Since 1950, the agency has helped tens of millions of people restart their 
+
+lives. Today, a staff of more than 9,300 people in 123 countries continues to 
+
+help and protect millions of refugees, returnees, internally displaced and 
+
+stateless people.
+
+
+</p>
+
+
+
+
+ </p>
+
+
+
+
+                                                                                                                                                                                                                                                            <table style="width:100%">
+                                                                                                                                                                                                                                                                <tr>
+                                                                                                                                                                                                                                                                    <td><img height="150" src="images/committee_people/SAMEERA S RAO.jpg" /></img></td>
+                                                                                                                                                                                                                                                                    <td><img height="150" src="images/committee_people/RHEA YADAV.jpg" /></img></td>
+                                                                                                                                                                                                                                                                    <td></td>
+                                                                                                                                                                                                                                                                </tr>
+                                                                                                                                                                                                                                                                <tr>
+                                                                                                                                                                                                                                                                    <td>
+
+                                                                                                                                                                                                                                                                        Sameera S. Rao
+
+
+                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                    </td>
+                                                                                                                                                                                                                                                                    <td>Rhea Yadav
+</td>
+
+                                                                                                                                                                                                                                                                </tr>
+                                                                                                                                                                                                                                                                <tr>
+                                                                                                                                                                                                                                                                    <td>    High Commissioner  
+</td>
+                                                                                                                                                                                                                                                                    <td>    Deputy High Commissioner
+</td>
+
+                                                                                                                                                                                                                                                                </tr>
+                                                                                                                                                                                                                                                            </table>
+
+
+
+
+	</ul></li>
+ 
+ 
+ 
+ 
+
+		<a class="anchor" id="1"></a><li>		<a style="cursor:pointer" onClick="toggle('node-1')"> The African Union Peace and Security Council (AU-PSC) </a>		<ul class='committee-topics' id='node-1' style='display:none'>      <p class="committee-topics" style="padding: 8px;">The Peace and Security Council (PSC) is the African Union's (AU's) standing
+
+decision-making body responsible for the maintenance of continental peace 
+
+and security. It has 15 members, elected by the AU Executive Council on 
+
+regional basis (three from Central Africa; three from East Africa; two from 
+
+North Africa; three from Southern Africa; and four from West Africa).
+
+
+
+<p>
+
+
+Members are elected for three-year (five members) or two-year (ten
+
+members) terms and can be re-elected immediately for another term. There 
+
+are no permanent members and no veto. PSC chairmanship rotates on a 
+
+monthly basis, in alphabetical order of the English-language names of 
+
+member states.  </p>
+
+ </p>		
+
+
+<table style="width:100%">
+                                                                                                                                                                                                                                                                <tr>
+                                                                                                                                                                                                                                                                    <td><img height="150" src="images/committee_people/ABHINAV VERMA.jpg" /></img></td>
+                                                                                                                                                                                                                                                                    <td><img height="150" src="images/committee_people/DRUSHTI JOSHI.jpg" /></img></td>
+                                                                                                                                                                                                                                                                    <td></td>
+                                                                                                                                                                                                                                                                </tr>
+                                                                                                                                                                                                                                                                <tr>
+                                                                                                                                                                                                                                                                    <td>
+
+                                                                                                                                                                                                                                                                        Abhinav Verma
+
+
+
+                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                    </td>
+                                                                                                                                                                                                                                                                    <td>Drushti Joshi
+
+</td>
+
+                                                                                                                                                                                                                                                                </tr>
+                                                                                                                                                                                                                                                                <tr>
+                                                                                                                                                                                                                                                                    <td>    Chairperson
+  
+</td>
+                                                                                                                                                                                                                                                                    <td>    Vice Chairperson
+
+</td>
+
+                                                                                                                                                                                                                                                                </tr>
+                                                                                                                                                                                                                                                            </table>
+
+
+
+</ul></li>
+ 
+
+<a class="anchor" id="2"></a><li>		<a style="cursor:pointer" onClick="toggle('node-2')"> Organisation of Islamic Cooperation </a>		<ul class='committee-topics' id='node-2' style='display:none'>      <p class="committee-topics" style="padding: 8px;">
+ 
+ 
+ The Organisation of Islamic Cooperation is
+
+organisation founded in 1969 consisting of 57 member states. The 
+
+organisation states that it is "the collective voice of the Muslim world" and 
+
+works to "safeguard and protect the interests of the Muslim world in the 
+
+spirit of promoting international peace and harmony".
+
+<p>
+The OIC has permanent delegations to the United Nations and the European 
+
+Union.
+</p>
+
+
+
+
+ 
+ </p>
+
+
+<table style="width:100%">
+                                                                                                                                                                                                                                                                <tr>
+                                                                                                                                                                                                                                                                    <td><img height="150" src="images/committee_people/TANYA KAK.jpg" /></img></td>
+                                                                                                                                                                                                                                                                    <td><img height="150" src="images/committee_people/AAMIR AHMED.jpeg" /></img></td>
+                                                                                                                                                                                                                                                                    <td></td>
+                                                                                                                                                                                                                                                                </tr>
+                                                                                                                                                                                                                                                                <tr>
+                                                                                                                                                                                                                                                                    <td>
+
+                                                                                                                                                                                                                                                                      Tanya kak
+
+
+
+
+                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                    </td>
+                                                                                                                                                                                                                                                                    <td>Aamir Ahmed
+
+
+</td>
+
+                                                                                                                                                                                                                                                                </tr>
+                                                                                                                                                                                                                                                                <tr>
+                                                                                                                                                                                                                                                                    <td>    Chairperson
+  
+</td>
+                                                                                                                                                                                                                                                                    <td>    Co-chairperson
+
+
+</td>
+
+                                                                                                                                                                                                                                                                </tr>
+                                                                                                                                                                                                                                                            </table>
+
+
+	</ul></li>		
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+  <a class="anchor" id="5"></a><li>		<a style="cursor:pointer" onClick="toggle('node-5')"> United Nations Security Council </a>		<ul class='committee-topics' id='node-5' style='display:none'>      <p class="committee-topics" style="padding: 8px;">
+ 
+ 
+Under the Charter, the Security Council has primary responsibility for the
+
+maintenance of international peace and security. It has 15 Members, and each 
+
+Member has one vote. Under the Charter, all Member States are obligated to 
+
+comply with Council decisions. The Security Council takes the lead in 
+
+determining the existence of a threat to the peace or act of aggression. It calls 
+
+upon the parties to a dispute to settle it by peaceful means and recommends 
+
+methods of adjustment or terms of settlement. In some cases, the Security 
+
+Council can resort to imposing sanctions or even authorize the use of force to 
+
+maintain or restore international peace and security.
+<p>
+
+The Security Council also recommends to the General Assembly the 
+
+appointment of the Secretary-General and the admission of new Members to 
+
+the United Nations. And, together with the General Assembly, it elects the 
+
+judges of the International Court of Justice.
+
+
+</p>
+ 
+ </p>
+
+
+<table style="width:100%">
+                                                                                                                                                                                                                                                                <tr>
+                                                                                                                                                                                                                                                                    <td><img height="150" src="images/committee_people/RUDRANEEL CHATTOPADHYAY.jpg" /></img></td>
+                                                                                                                                                                                                                                                                    <td><img height="150" src="images/committee_people/NEEL DUTTAROY.jpg" /></img></td>
+                                                                                                                                                                                                                                                                    <td></td>
+                                                                                                                                                                                                                                                                </tr>
+                                                                                                                                                                                                                                                                <tr>
+                                                                                                                                                                                                                                                                    <td>
+
+                                                                                                                                                                                                                                                                      
+Rudraneel Chattopadhyay
+
+
+
+
+                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                    </td>
+                                                                                                                                                                                                                                                                    <td>
+Neel Duttaroy
+
+
+
+</td>
+
+                                                                                                                                                                                                                                                                </tr>
+                                                                                                                                                                                                                                                                <tr>
+                                                                                                                                                                                                                                                                    <td>    President
+
+  
+</td>
+                                                                                                                                                                                                                                                                    <td>    
+Vice President
+
+
+
+</td>
+
+                                                                                                                                                                                                                                                                </tr>
+                                                                                                                                                                                                                                                            </table>
+
+
+	</ul></li>	
+ 
+ 
+ </ul></li>	
+ 
+ 
+ 
+ 
+ 
+			</ul>
+		
+		</div>
+		
+        
+	</div>
+	
+</section>
+
+</body>
+
+<footer id="footer">	<p>		<a href="https://twitter.com/Amity_Amimun"> <img src="images/32.png"><span>Follow us on Twitter</span></a>		<a href="https://www.facebook.com/amitymun"> <img src="images/32f.png"><span>Like us on Facebook</span></a> <img src="images/instagram.png">	<a href="https://instagram.com/amity_amimun"><span>Follow us on Instagram</span>  </a>	<br>		Copyright &copy 2015 <a href="http://www.amity.edu/">Amity University Noida</a> India 		<br>					</p></footer>

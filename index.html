@@ -1,0 +1,323 @@
+﻿<!DOCTYPE html>
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'/>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'/>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" media="all" href="style.css"/>
+	<link rel="icon" type="images/x-icon" href="images/title.ico"/>
+	
+	<!-- Meta & Site Info -->
+	<title> AMIMUN 2016 </title>
+	
+	<meta name="keywords" content="MUN, UN, AMIMUN,AMITY, International, Model, United, Nations, Deaf, Unity, League, McMUN, AMUN, University"/>
+	<meta name="description" content="AMITY International Model United Nations"/>
+	<meta name="theme-color" content="#002048"/>
+	<meta id="viewport" name="viewport" content="width=device-width"/>
+	<script>
+		window.onload = function(){
+			if(window.innerWidth<600){
+				console.log('viewport fixed at 600');
+				var viewport = document.getElementById('viewport');
+				viewport.setAttribute('content','width=600');
+				document.getElementById('radcam-slide').setAttribute("style","height:"+window.innerHeight+"px");
+			}
+		}
+	</script>
+
+
+
+   
+	
+	<!-- JS -->
+	<script src = "js/functions.js"> </script>
+	<script src = "js/modernizr.js"> </script>
+	
+	
+	<!-- jQuery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"> </script>
+	
+	<!-- Smooth Scrolling Script -->
+	<script>
+		$(function() {
+			$('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html,body').animate({
+							scrollTop: target.offset().top
+						}, 1000);
+						return false;
+					}
+				}
+			});
+		});
+	</script>
+	
+	<!-- Pre-load Images -->
+	<img id="im" src="images/menu-logo-blue.png" style="display: none;">
+	<img class="im2" src="images/pdf_blue.png" style="display: none;">
+</head>
+
+<nav id='menubar'>
+	<div class = 'menuwrapper'>
+		
+		<a href="index.html" target="_parent">
+			<img src = "images/menu-logo.png" width="59px" height="50px" onMouseOver="blueLogo(this);" onMouseOut="whiteLogo(this);">
+		</a>
+		
+		<ul class="menulist">
+			
+			<li><a href="index.html">Home</a></li>
+			
+			<li class="dropdownitem">
+				<label>About Us</label>
+				
+				
+				<ul class="dropdownlist">
+					<li><a href="about-home.html">About AMIMUN</a></li>
+					
+					<li><a href="about-amity.html">About Amity</a></li>
+					
+					<li><a href="about-msg.html">Messages</a></li>
+					
+					
+
+<li><a href="about-advisory.html">Advisory Board</a></li>
+
+					
+					<li><a href="about-secretariat.html">Secretariat</a></li>
+				</ul>
+				
+				
+			</li>
+			
+			<li class="dropdownitem">
+				<label>Apply</label>
+				<ul class="dropdownlist">
+				<li><a href="DelegateForm.aspx">Delegate application</a></li>
+                    <li><a href="IPForm.aspx">International Press application</a></li>
+					</ul>
+				
+				
+			</li>
+			<li class="dropdownitem">
+				<label>Committees</label>
+				<ul class="dropdownlist">
+					<li><a href="prep-committees.html#3" onClick="committeeClick('node-3')">Disarmament and International Security Committee</a></li>
+					
+					
+					<li><a href="prep-committees.html#7" onClick="committeeClick('node-7')">Economic and Financial Affairs Council</a></li>
+					
+					<li><a href="prep-committees.html#4" onClick="committeeClick('node-4')">Social, Cultural and Humanitarian Committee</a></li>
+					<li><a href="prep-committees.html#6" onClick="committeeClick('node-6')">United Nations High Commission for Refugees</a></li>
+					
+						<li><a href="prep-committees.html#1" onClick="committeeClick('node-1')">African Union - Peace and Security Council
+</a></li>
+					
+					
+					<li><a href="prep-committees.html#2" onClick="committeeClick('node-2')">Organisation of Islamic Cooperation</a></li>
+					
+				
+						<li><a href="prep-committees.html#5" onClick="committeeClick('node-5')">United Nations Security Council</a></li>
+					
+				</ul>
+			</li>
+			
+			
+			
+			
+			<li class="dropdownitem">
+				<label>Resources</label>
+				<ul class="dropdownlist">
+                    					<li><a href="allot.html">Allotments</a></li> <li><a href="bank.html">Payment Details</a></li>
+					
+					<li><a href="background-guide.html">Background Guides</a></li>
+					
+					<li><a href="venue.html">Venue</a></li>
+					
+					<li><a href="schedule.html">Schedule</a></li>
+					
+				</ul>
+			
+			</li>
+			
+			<li>
+			<a href="club.html">AMIMUN Club</a></li>
+			
+			<li><a href="contact.html">Contact Us</a></li>
+			
+		</ul>
+		
+	</div>
+</nav>							<body onload="stretch_footer(); count(); resizeCommitteeWrapper(); handleCommitteeClick(); centerCommitteeBoxes();" onresize = "stretch_footer(); resizeCommitteeWrapper(); centerCommitteeBoxes();">
+<span id="countdown"></span>
+
+	
+	
+	<section class = 'fullscreenslide' id = 'radcam-slide'>
+
+
+	
+	
+	
+	<div style="height:40%;">
+	
+		<div id = 'date'>
+			8th - 10th JANUARY 2016
+		</div>
+<br/>	
+	<div id="date">
+			Putting Humanity Before Mankind
+		</div>
+  
+	</div>
+	
+	
+	<div style="height: 40%; text-align: center;">
+	
+
+			
+				<img style="display: inline-block;"src = "images/amity-logo.png" >
+			
+				<p class="title">
+					Amity International
+					<br>
+					Model United Nations
+				</p>
+			<div id="timer" style="margin-top:-110px;margin-left:-15px"></div>
+
+			
+	
+	</div>
+		
+	<!--<div style="height: 20%">
+		<div id = 'scrolldown'>
+			<span class = "scroll-text">Scroll down for an overview of this year's conference!</span>
+			<br>
+			<a href="#welcome" style="text-decoration: none">
+			<span class="scroll-arrow"> &#9660 </span>
+			</a>
+		</div>
+	</div>-->
+		
+	</section>
+	
+	<section class = 'slide-content' id = 'note-slide'>
+	<div class = "slide-content note-overlay" style="padding-bottom: 100px;" id = "welcome">
+	
+		<h1> From the Secretary General</h1>
+		
+		<p style="height: auto; width: wrap; margin-top: 0px; padding-bottom: 20px;">
+			Dear Prospective Participants,
+			<br>
+			<br>
+			I am honored to invite you to apply to the fifth edition of Amity International Model United Nations, AMIMUN'16 to be held from Friday, January 8, to Sunday, January 10, 2016 at Amity University, Uttar Pradesh. 
+			<br>
+			<br>
+			An MUN conference is one of its kinds and what sets it apart is its ability to open the doors of international reconnection and association to the future generations who are ready to step in to the corridors of diplomacy and seize the moment to work towards becoming responsible leaders of tomorrow. The vast array of topics and committees will further ensure a uniquely engaging and thought-provoking experience for each and every delegate.
+			<br>
+			<br>
+			Dear Prospective Delegates, I strongly encourage you to take full advantages of the opportunity brought forward by AMIMUN. I encourage you to be creative, test the limits of current international relations, while remaining realistic, learn as much as you can from this experience and bear those lessons in mind when entrusted with real decision making power in your future careers.
+			<br>
+			<br>
+			AMIMUN is an exciting educational opportunity, and I sincerely hope that you will choose to take part in it. I, and my Secretariat, look forward to welcoming you all to Amity University, Noida in January, 2016, where you would witness a conference like no other!
+			<br><br>
+			Sincerely,
+
+		    <br>
+		    Pritika Kohli
+			<br>
+             Secretary General
+			<br>
+			Amity International Model United Nations 2016
+			<br>
+			<br>
+				</p>
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KHTTOzs4QS8?rel=0&autoplay=1&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</p>
+
+		</div>
+
+
+
+	</section>
+
+
+
+	<section class = 'slide-content' id = 'com-slide'>
+		<div class = "com-overlay" >		
+			<h1> The Committees </h1>			
+		<div id = "com-wrapper" style="margin-top: 0px;">
+
+				<div class = "combox com-p">
+				Reforming global diplomacy in an ever fragmented world.
+			</div>	
+			
+			<a href="prep-committees.html#3" onClick="committeeClick('node-3')">		<div class = "combox" style="background: url('images/committees/c2.png');" >			<div class = "com-desc">UNGA - DISEC - The General Assembly (GA) is the main deliberative of the UN.</div>			<div class = "com-title">DISEC		</div>	
+			</div></a>
+			
+			<a href="prep-committees.html#7" onClick="committeeClick('node-7')">		<div class = "combox" style="background: url('images/committees/c3.jpg');" >			<div class = "com-desc">The Economic and Finance Committee (ECOFIN) is a committee within the United Nations that solves problems in the area of global finances and economics. 	</div>			<div class = "com-title">ECOFIN</div>		</div></a>
+			
+			
+			
+			<a href="prep-committees.html#4" onClick="committeeClick('node-4')">		<div class = "combox" style="background: url('images/committees/c5.png');" >			<div class = "com-desc">As its name suggests, the Social, Humanitarian Cultural Affairs Committee specializes in Social, Humanitarian and Cultural Issues. Much of its mandate concerns the examination of human rights questions, problems and crises.  </div>			<div class = "com-title">SOCHUM			</div>		</div></a>
+			
+			
+			
+			
+			
+			<a href="prep-committees.html#6" onClick="committeeClick('node-6')">		<div class = "combox" style="background: url('images/committees/c6.jpg');" >			<div class = "com-desc">The Office of the United Nations High Commissioner for Refugees was established on December 14, 1950 by the UN. The agency is mandated to lead and co-ordinate international action to protect refugees and resolve refugee problems worldwide.  </div>			<div class = "com-title">UNHCR			</div>		</div></a>
+			
+			<a href="prep-committees.html#1" onClick="committeeClick('node-1')">		<div class = "combox" style="background: url('images/committees/c1.gif');" >			<div class = "com-desc">The Peace and Security Council (PSC) is the African Union's (AU's) standing decision-making body responsible for the maintenance of continental peace and security.</div>			<div class = "com-title">AU-PSC			</div>		</div></a><!-- Force a clear -->
+		
+			
+			
+			
+			<a href="prep-committees.html#2" onClick="committeeClick('node-2')">		<div class = "combox" style="background: url('images/committees/c7.jpg');" >			<div class = "com-desc">			The Organisation of Islamic Cooperation is an international organisation founded in 1969 consisting of 57 member states. The organisation states that it is "the collective voice of the Muslim world" .</div>			<div class = "com-title">OIC			</div>		</div></a>
+			
+			
+			
+			
+			<a href="prep-committees.html#5" onClick="committeeClick('node-5')">		<div class = "combox" style="background: url('images/committees/c4.jpg');" >			<div class = "com-desc">Under the Charter, the Security Council has primary responsibility for the maintenance of international peace and security. It has 15 Members, and each Member has one vote.</div>			<div class = "com-title">UNSC			</div>		</div></a>
+			
+			
+				<br class="clear">
+		</div>
+		</div>
+	</section>
+	
+	<section class = 'slide-content' id = 'apply-slide' style="padding-bottom: 200px;">
+	
+			<h1> Apply Below </h1>
+				<ul class = "apply-graphics">
+									
+					<li style="position: relative;">
+						<a style="position: relative;" href="DelegateForm.aspx"  >
+							<img src='images/icons/2.jpg' alt="AMIMUN delegate applications">
+							<p style="position: relative;
+padding-top: 5px;" >Apply as Delegate</p>
+						</a>
+					</li>
+					
+					<li>
+						<a style="position: relative; padding-left: 2px;" href="IPForm.aspx">
+							<img src='images/icons/3.jpg' alt="AMIMUN press applications">
+							<p style="position: relative;
+padding-top: 57px;">Apply as International Press</p>
+						</a>
+					</li>
+				</ul>
+		
+	</section>
+	
+<footer id="footer">	<p>		<a href="https://twitter.com/Amity_Amimun"> <img src="images/32.png"><span>Follow us on Twitter</span></a>		<a href="https://www.facebook.com/amitymun"> <img src="images/32f.png"><span>Like us on Facebook</span></a> <img src="images/instagram.png">	<a href="https://instagram.com/amity_amimun"><span>Follow us on Instagram</span>  </a>	<br>		Copyright &copy 2015 <a href="http://www.amity.edu/">Amity University Noida</a> India 		<br>					
+    <br>  </p></footer>

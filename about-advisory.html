@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+
+
+<head>
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" media="all" href="style.css">
+	<link rel="icon" type="images/x-icon" href="images/title.ico">
+		
+	<!-- PHP Includes -->
+<!-- Meta & Site Info -->
+<title> AMIMUN 2016 </title>
+	
+	<meta name="description" content="Amity International Model United Nations">
+	<meta name="theme-color" content="#01458e">
+	<meta id="viewport" name="viewport" content="width=device-width">
+	<!-- Enforces minimum width of viewport to 600 -->
+	<script>
+		window.onload = function(){
+			if(window.innerWidth<600){
+				console.log('viewport fixed at 600');
+				var viewport = document.getElementById('viewport');
+				viewport.setAttribute('content','width=600');
+				document.getElementById('radcam-slide').setAttribute("style","height:"+window.innerHeight+"px");
+			}
+		}
+	</script>
+	
+	<!-- JS -->
+	<script src = "js/functions.js"> </script>
+	<script src = "js/modernizr.js"> </script>
+	
+	
+	<!-- jQuery -->
+	<script src="../ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"> </script>
+	
+	<!-- Smooth Scrolling Script -->
+	<script>
+		$(function() {
+			$('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html,body').animate({
+							scrollTop: target.offset().top
+						}, 1000);
+						return false;
+					}
+				}
+			});
+		});
+	</script>
+	
+	<!-- Pre-load Images -->
+	<img src="images/menu-logo-blue.png" style="display: none;">
+	<img src="images/pdf_blue.png" style="display: none;">
+</head>
+
+<nav id='menubar'>
+	<div class = 'menuwrapper'>
+		
+		<a href="index.html" target="_parent">
+			<img src = "images/menu-logo.png" width="59px" height="50px" onMouseOver="blueLogo(this);" onMouseOut="whiteLogo(this);">
+		</a>
+		
+			
+	
+        <ul class="menulist">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li class="dropdownitem">
+                <label>About Us</label>
+
+
+                <ul class="dropdownlist">
+                    <li><a href="about-home.html">About AMIMUN</a></li>
+
+                    <li><a href="about-amity.html">About Amity</a></li>
+
+                    <li><a href="about-msg.html">Messages</a></li>
+
+
+
+                    <li><a href="about-advisory.html">Advisory Board</a></li>
+
+
+                    <li><a href="about-secretariat.html">Secretariat</a></li>
+                </ul>
+
+
+            </li>
+
+            <li class="dropdownitem">
+                <label>Apply</label>
+                <ul class="dropdownlist">
+                    <li><a href="DelegateForm.aspx">Delegate application</a></li>
+                    <li><a href="IPForm.aspx">International Press application</a></li>
+                </ul>
+
+
+            </li>
+            <li class="dropdownitem">
+                <label>Committees</label>
+                <ul class="dropdownlist">
+                    <li><a href="prep-committees.html#3" onClick="committeeClick('node-3')">Disarmament and International Security Committee</a></li>
+
+
+                    <li><a href="prep-committees.html#7" onClick="committeeClick('node-7')">Economic and Financial Affairs Council</a></li>
+
+                    <li><a href="prep-committees.html#4" onClick="committeeClick('node-4')">Social, Cultural and Humanitarian Committee</a></li>
+                    <li><a href="prep-committees.html#6" onClick="committeeClick('node-6')">United Nations High Commission for Refugees</a></li>
+
+                    <li>
+                        <a href="prep-committees.html#1" onClick="committeeClick('node-1')">
+                            African Union - Peace and Security Council
+                        </a>
+                    </li>
+
+
+                    <li><a href="prep-committees.html#2" onClick="committeeClick('node-2')">Organisation of Islamic Cooperation</a></li>
+
+
+                    <li><a href="prep-committees.html#5" onClick="committeeClick('node-5')">United Nations Security Council</a></li>
+
+                </ul>
+            </li>
+
+
+
+
+            <li class="dropdownitem">
+                <label>Resources</label>
+                <ul class="dropdownlist">
+                    <li><a href="allot.html">Allotments</a></li> <li><a href="bank.html">Payment Details</a></li>
+
+                    <li><a href="background-guide.html">Background Guides</a></li>
+
+                    <li><a href="venue.html">Venue</a></li>
+
+                    <li><a href="schedule.html">Schedule</a></li>
+
+                </ul>
+
+            </li>
+
+            <li>
+                <a href="club.html">AMIMUN Club</a>
+            </li>
+
+            <li><a href="contact.html">Contact Us</a></li>
+
+        </ul>
+		
+		
+			
+	</div>
+</nav>							<body onLoad="stretch_footer(); count(); resizeCommitteeWrapper(); handleCommitteeClick();" onresize = "stretch_footer(); resizeCommitteeWrapper()" style="background: url('images/backgrounds/background2.jpg');">
+<section class = 'oxwrapper'>
+
+	
+<div class="oxcontent">
+	
+		<h1 align="center"> Advisory board AMIMUN'16 </h1>
+	
+		
+		
+		
+		
+
+
+
+		
+
+
+
+<h3 id="sectitle">Ms. Homaira Ayubi</h3>
+		<div id="secretariat" style="min-height: 150px;
+    margin-left: 40px;
+    margin-right: 40px;" >
+		<p><img style="float: left;
+    margin-right: 20px;
+    margin-bottom: 49px;
+    height: 150px;
+    width: 150px"  src="nov1_images/ayubi.jpg" alt="Ms. Homaira Ayubi"></p>
+		
+		
+	<p>Member of Parliament of the Islamic Republic of Afghanistan
+</p>
+
+	<p>Wolesi Jirga (House of the People)</p>
+
+
+
+<p>
+After the policies of the powerful today have failed us for generations, it is very humbling to see the youth of today coming together to deliberate upon the problems that plague mankind.
+It is through events such as this that the leaders of tomorrow come forth.
+My best wishes are with AMIMUN '16 with optimism that tomorrow, these young ladies and gentlemen will change the course of mankind for the better.
+</p>
+		</div>
+
+
+
+
+
+
+		
+		
+
+
+
+
+
+<h3 id="sectitle">Dr. Riad Abbas</h3>
+		<div id="secretariat" style="min-height: 150px;
+    margin-left: 40px;
+    margin-right: 40px;" >
+		<p><img style="float: left;
+    margin-right: 20px;
+    margin-bottom: 49px;
+    height: 150px;
+    width: 150px"  src="nov1_images/riad.jpg"></p>
+		
+		
+	<p>Ambassador of the Syrian Arab Republic 
+</p>
+
+	
+
+
+
+<p>
+We should start believing in the power of the youth and their ability of
+leadership because they will be taking forth the world's aspirations for a
+safer and a better world that is war free. Therefore we appreciate this
+program that helps in building the young leaders of the future world.</p>
+		</div>
+
+
+
+<h3 id="sectitle">Prof. A.K.Rashid</h3>
+		<div id="secretariat" style="min-height: 150px;
+    margin-left: 40px;
+    margin-right: 40px;" >
+		<p><img style="float: left;
+    margin-right: 20px;
+    margin-bottom: 49px;
+    height: 150px;
+    width: 150px"  src="nov1_images/rashid.png"></p>
+		
+		
+	<p>Visiting  Faculty from  Kabul University for  the Center
+for Persian and Central Asian Studies 
+</p>
+	
+
+
+
+<p>
+I am elated to know about AMIMUN 2016. I would like to appreciate your great work for the Amity Model United Nations Conference. I would also like to congratulate your Amity family for completing 5 years of this great debating forum. For me, as a professor and diplomat and supervisor of 15,000 Afghan students all over India, it’s clear that they all have been inclusive in  India and its quality education. I am sure these kind activities will be a great source of learning and getting to know each other. I would also serve as a great platform for great exchange ideas and opinions on issues that concern the world.  In our Afghan language a couplet says:
+HAR  KI MAKTAB  RAFT ADAM MESHAWD 	
+NORE CHASHME KHALQE ALAM MEHAWD .
+Everyone who is going to school  wants to learn humanity. 
+He /she serve as the eyes of  the people all over  the universe . 
+So, all must learn and learn from Cradle to Grave.
+ My gratitude to the team of AMIMUN and Amity University for letting me be a part of this great initiative. I wish you all the very best for the same. 
+</p>
+		</div>
+
+
+
+
+
+
+
+
+
+
+<h3 id="sectitle">Samuel Akorimo</h3>
+		<div id="secretariat" style="min-height: 150px;
+    margin-left: 40px;
+    margin-right: 40px;" >
+		<p><img style="float: left;
+    margin-right: 20px;
+    margin-bottom: 49px;
+    height: 150px;
+    width: 150px"  ></p>
+		
+		
+	<p>Branch Head, United Nations Mechanism for International Criminal Tribunals,
+</p><p>Arusha Branch, Tanzania
+</p>
+
+	
+
+
+
+<p>
+It gives me hope to see that we are living in a world where young boys and girls are concerned with the issues of today. I bless AMIMUN '16 and wish that the next generation can assuage the moral depravity that the politicians of the past have put us in.</p>
+		</div>
+
+
+
+<h3 id="sectitle">Dina Bouchkouch</h3>
+		<div id="secretariat" style="min-height: 150px;
+    margin-left: 40px;
+    margin-right: 40px;" >
+		<p><img style="float: left;
+    margin-right: 20px;
+    margin-bottom: 49px;
+    height: 150px;
+    width: 150px"  src="nov1_images/dina.jpg"></p>
+		
+		
+	<p>Bordeaux Montaigne University (France)
+</p>
+
+	
+
+
+
+<p>
+MUN is the occasion to live the amazing experience of representing a country in a truly international and multicultural environment, debating over hot topics of the current geopolitical agenda, learning to negotiate and compromise to reach consensus, making new friends.  
+No one needs to be a professional of the international relations, or on diplomacy, it is all about learning. Today you might be delegates in your College, you’re learning, getting familiar with the concept, its rules, but who knows maybe tomorrow you will be sitting in New-York or Geneva at the UN’s headquarters, small steps guide you to higher places.
+AMIMUN’16 is your opportunity to learn how to be a delegate and to feel the atmosphere of a MUN. Being helped, supported and surrounded by the AMITY‘s team, which this year is organizing its 5th MUN but also boosted by Indonesia MUN and Young Leaders' Consortium.
+
+</p>
+		</div>
+
+
+
+
+<h3 id="sectitle">Suhail Prasathong</h3>
+		<div id="secretariat" style="min-height: 150px;
+    margin-left: 40px;
+    margin-right: 40px;">
+		<p>
+
+<img style="float: left;
+    margin-right: 20px;
+    margin-bottom: 49px;
+    height: 150px;
+    width: 150px" src="images/advisors/suhail.jpg" alt="Suhail Prasathong"></p>
+		
+
+		
+	<p></p>
+<p>Rochester Institute of Technology, United States of America</p>
+<p>The power of the Model United Nations program can be underestimated at times. Most students who participate look at it as a “mock” United Nations conference, which, at face value might be true. This goes to show that the platform MUN provides to students all around the world is unparalleled. The opportunity to speak your mind through rigorous research and analysis allows the individual to grow not just academically or intellectually but as a human being.</p>
+
+		</div>
+
+
+
+<h3 id="sectitle">Sunit Chatterjee</h3>
+		<div id="secretariat" style="min-height: 150px;
+    margin-left: 40px;
+    margin-right: 40px;">
+		<p><img style="float: left;
+    margin-right: 20px;
+    margin-bottom: 49px;
+    height: 150px;
+    width: 150px"  src="images/advisors/sunit.jpg" alt="Sunit Chatterjee"></p>
+		
+
+		
+	
+
+<p>Murdoch University, Australia</p>
+
+<p>The UN is a key platform to address global problems such as climate control, economic crisis and war, to promote dialogue and understanding. I hope AMIMUN ’16 can successfully touch upon these topics and bring about new perspectives. Model United Nations is indeed a tool that youth can utilize to propel society in the right direction.</p>
+		</div>
+
+
+
+				
+		<h3 id="sectitle">Aamir Ahmed</h3>
+		<div id="secretariat" style="min-height: 150px;
+    margin-left: 40px;
+    margin-right: 40px;" >
+		<p><img style="float: left;
+    margin-right: 20px;
+    margin-bottom: 49px;
+    height: 150px;
+    width: 150px"  src="images/advisors/aamir.jpg" alt="Aamir Ahmed"></p>
+		
+		
+	<p></p>
+
+	<p>Amity University, India</p>
+
+
+
+<p>My journey with MUNs began with AMIMUN 2011, and since then there's been no looking back. I consider it an honor to be a part of AMIMUN 2016 as an Advisor. I'm really proud how AMIMUN has become a legacy which has always strived to introduce new ideas, in the form of unconventional committees, which in turn open up an entirely new side of role-based debating. I've been associated with AMIMUN as a delegate, a member of the Executive Board, and as a member of the advisory board, and thus, I can confidently say that AMIMUN has been growing with each year, ever since its inception. I'm really excited about AMIMUN 2016 as I'll be chairing the Organization of Islamic Cooperation, and I'm confident this MUN is going to be an absolutely delightful experience for everyone. Cheers!</p>
+
+
+		</div>
+
+
+		
+		
+		
+				
+		<h3 id="sectitle">Satrajit Sahani</h3>
+		<div id="secretariat" style="min-height: 150px;
+    margin-left: 40px;
+    margin-right: 40px;">
+		<p><img style="float: left;
+    margin-right: 20px;
+    margin-bottom: 49px;
+    height: 150px;
+    width: 150px" src="images/advisors/satrajit.jpg" alt="Satrajit Sahani"></p>
+		
+		
+
+
+	<p>Amity University, India</p>
+
+<p>
+Now in its fifth year, AMIMUN has grown leaps and bounds from its humble beginnings in 2011. Delegates from all over India and abroad, will engage in well-directed debates in any one of our seven committees which are being simulated this year. I expect AMIMUN 2016 to leave a lasting impression on your hearts and minds long after the conference comes to an end. It is indeed my honour and privilege to welcome you all to the 5th edition of Amity International Model United Nations Conference 2016</p>
+		</div>
+
+
+
+
+
+
+	
+</section>
+
+</body>
+
+<footer id="footer">	<p>		<a href="https://twitter.com/Amity_Amimun"> <img src="images/32.png"><span>Follow us on Twitter</span></a>		<a href="https://www.facebook.com/amitymun"> <img src="images/32f.png"><span>Like us on Facebook</span></a> <img src="images/instagram.png">	<a href="https://instagram.com/amity_amimun"><span>Follow us on Instagram</span>  </a>	<br>		Copyright &copy 2015 <a href="http://www.amity.edu/">Amity University Noida</a> India 		<br>					      <br>  </p></footer>

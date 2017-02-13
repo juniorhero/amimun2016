@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+
+<head>
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" media="all" href="style.css">
+	<link rel="icon" type="images/x-icon" href="images/title.ico">
+	
+	<!-- PHP Includes -->
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60290601-1', 'auto');
+  ga('send', 'pageview');
+
+</script>	
+	<!-- Meta & Site Info -->
+	<title>AMIMUN 2016</title>
+	
+	<meta name="description" content="Amity International Model United Nations">
+	<meta name="theme-color" content="#01458e">
+	<meta id="viewport" name="viewport" content="width=device-width">
+	<!-- Enforces minimum width of viewport to 600 -->
+	<script>
+		window.onload = function(){
+			if(window.innerWidth<600){
+				console.log('viewport fixed at 600');
+				var viewport = document.getElementById('viewport');
+				viewport.setAttribute('content','width=600');
+				document.getElementById('radcam-slide').setAttribute("style","height:"+window.innerHeight+"px");
+			}
+		}
+	</script>
+	
+	
+	<script>
+	
+	$(function() { //When the document loads
+  $("#menu1").bind("click", function() {
+    $(window).scrollTop($("#ICJ").offset().top); //scroll to div with container as ID.
+    return false; //Prevent Default and event bubbling.
+  });
+});
+
+</script>
+	<!-- JS -->
+	<script src = "js/functions.js"> </script>
+	<script src = "js/modernizr.js"> </script>
+	
+	
+	<!-- jQuery -->
+	<script src="../ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"> </script>
+	
+	<!-- Smooth Scrolling Script -->
+	<script>
+		$(function() {
+			$('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html,body').animate({
+							scrollTop: target.offset().top
+						}, 1000);
+						return false;
+					}
+				}
+			});
+		});
+	</script>
+	
+	<!-- Pre-load Images -->
+	<img src="images/menu-logo-blue.png" style="display: none;">
+	<img src="images/pdf_blue.png" style="display: none;">
+</head>
+
+<nav id='menubar'>
+	<div class = 'menuwrapper'>
+		
+		<a href="index.html" target="_parent">
+			<img src = "images/menu-logo.png" width="59px" height="50px" onMouseOver="blueLogo(this);" onMouseOut="whiteLogo(this);">
+		</a>
+		
+		
+		
+        <ul class="menulist">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li class="dropdownitem">
+                <label>About Us</label>
+
+
+                <ul class="dropdownlist">
+                    <li><a href="about-home.html">About AMIMUN</a></li>
+
+                    <li><a href="about-amity.html">About Amity</a></li>
+
+                    <li><a href="about-msg.html">Messages</a></li>
+
+
+
+                    <li><a href="about-advisory.html">Advisory Board</a></li>
+
+
+                    <li><a href="about-secretariat.html">Secretariat</a></li>
+                </ul>
+
+
+            </li>
+
+            <li class="dropdownitem">
+                <label>Apply</label>
+                <ul class="dropdownlist">
+                    <li><a href="DelegateForm.aspx">Delegate application</a></li>
+                    <li><a href="IPForm.aspx">International Press application</a></li>
+                </ul>
+
+
+            </li>
+
+            <li class="dropdownitem">
+                <label>Committees</label>
+                <ul class="dropdownlist">
+
+
+                    <li><a href="prep-committees.html#3" onClick="toggle('node-3')" onClick="committeeClick('node-3')">Disarmament and International Security Committee</a></li>
+
+
+                    <li><a href="prep-committees.html#7" onClick="toggle('node-7')" onClick="committeeClick('node-7')">Economic and Financial Committee</a></li>
+
+                    <li><a href="prep-committees.html#4" onClick="toggle('node-4')" onClick="committeeClick('node-4')">Social, Humanitarian and Cultural Committee</a></li>
+                    <li><a href="prep-committees.html#6" onClick="toggle('node-6')" onClick="committeeClick('node-6')">United Nations High Commission for Refugees</a></li>
+
+                    <li>
+                        <a href="prep-committees.html#1" onClick="toggle('node-1')" onClick="committeeClick('node-1')">
+                            African Union - Peace and Security Council
+                        </a>
+                    </li>
+
+
+                    <li><a href="prep-committees.html#2" onClick="toggle('node-2')" onClick="committeeClick('node-2')">Organisation of Islamic Cooperation</a></li>
+
+
+                    <li><a href="prep-committees.html#5" onClick="toggle('node-5')" onClick="committeeClick('node-5')">United Nations Security Council</a></li>
+
+
+
+
+
+
+
+                </ul>
+            </li>
+
+            <li class="dropdownitem">
+                <label>Resources</label>
+                <ul class="dropdownlist">
+                    <li><a href="allot.html">Allotments</a></li> <li><a href="bank.html">Payment Details</a></li>
+
+                    <li><a href="background-guide.html">Background Guides</a></li>
+
+                    <li><a href="venue.html">Venue</a></li>
+
+                    <li><a href="schedule.html">Schedule</a></li>
+
+                </ul>
+
+            </li>
+
+            <li>
+                <a href="club.html">AMIMUN Club</a>
+            </li>
+
+            <li><a href="contact.html">Contact Us</a></li>
+
+        </ul>	
+		
+	</div>
+</nav>							<body onLoad="stretch_footer(); count(); resizeCommitteeWrapper(); handleCommitteeClick();" onresize = "stretch_footer(); resizeCommitteeWrapper()" style="background: url('images/backgrounds/background4.jpg');">
+<section class = 'oxwrapper'>
+
+	<div class="oxcontent">
+
+		<h1>Messages AMIMUN'16</h1>
+		
+				
+		
+		<p>
+			
+		</p>
+			
+		
+        <div id="GeneralAssembly">
+		
+		<ul class="committee-list">
+		
+		
+		 <a class="anchor" id="3"></a><li>		<a style="cursor:pointer; text-align: center;" onClick="toggle('node-3')"> Dr Ashok K. Chauhan, Founder President - RBEF and Chairman - AKC Group of Companies
+ </a>		<ul class='committee-topics' id='node-3'>      <p class="committee-topics" style="padding: 8px;">
+ 
+ 
+
+<img style="padding:271px; padding-top: 15px;
+padding-bottom:0px;" width="267" height="272" src="images/messages/ashok.jpg"></img>
+&nbsp;
+&nbsp;
+&nbsp;
+<br/>
+<div style="position: relative;
+padding-left: 350px;"> Coming Soon </div>
+
+ </p>	</ul></li>	
+ 
+
+
+	 <a class="anchor" id="2"></a><li>		<a style="cursor:pointer; text-align: center;" onClick="toggle('node-2')"> Shri Atul Chauhan, Chancellor - Amity University, President - RBEF and Patron-in-chief - AMIMUN'16
+ </a>		<ul class='committee-topics' id='node-2'>      <p class="committee-topics" style="padding: 8px;">
+
+<img style="padding:271px; padding-top: 15px;
+padding-bottom:0px;" width="267" height="272" src="images/messages/atul.jpg"></img>
+ 
+&nbsp;
+&nbsp;
+&nbsp;
+
+<br/>
+ 
+ 
+ <div style="position: relative;
+padding-left: 350px;">Coming Soon
+ </div></p>	</ul></li>	
+
+
+
+	 <a class="anchor" id="4"></a><li>		<a style="cursor:pointer;text-align:center;" onClick="toggle('node-4')"> Prof (Dr.) Balvinder Shukla, Vice Chancellor - AUUP and Patron - AMIMUN'16
+ </a>		<ul class='committee-topics' id='node-4'>      <p class="committee-topics" style="padding: 8px;">
+
+<table>
+<tr>
+<td>
+<img style="padding:271px; padding-top: 15px;
+padding-bottom:0px;" width="267" height="272" src="images/messages/balvinder.jpg"></img>
+ </td>
+</tr>
+<td>
+
+
+<p class="committee-topics" style="text-align:justify; padding: 8px;">
+It gives me immense pleasure to welcome you to the fifth edition of Amity International Model United Nations Conference on the theme "<b>Putting Humanity before Mankind</b>" to be  held on January 8, 9 and 10, 2016 at Amity University Campus, Sector-125, Noida, U.P., India. 
+</p><p class="committee-topics" style="text-align:justify; padding: 8px;">
+
+Model United Nations, an academic simulation of various proceedings of the United Nations with students representing the delegations of various countries has now become one of the most popular and prestigious events in schools and colleges due to its multifaceted nature.
+</p><p class="committee-topics" style="text-align:justify; padding: 8px;">
+
+Amity firmly believes in the holistic development of the youth and provides ample opportunities to develop and promote their potentials for research, diplomacy, leadership, public speaking, critical thinking and teamwork skills.  
+</p><p class="committee-topics" style="text-align:justify; padding: 8px;">
+
+AUUP hosted the first edition of MUN in the year 2011 where it witnessed the extreme relevance of learning international affairs and understanding the role of the United Nations. It emphasised the values for peacemaking, security, conflict prevention, social progress, better living standards and human rights. The MUN platform facilitated the atmosphere conducive to learning about developing the international relations through meeting, discussing & collaborating with equally intellectual and talented peers on a range of pressing global issues.
+</p><p class="committee-topics" style="text-align:justify; padding: 8px;">
+
+The youth perspectives can find efficient and pragmatic solutions to the menaces which our contemporary world faces. AMIMUN’16 will feature 400+ delegates from over 60 colleges and universities from all over the world. 
+</p><p class="committee-topics" style="text-align:justify; padding: 8px;">
+
+This year’s theme, “Putting Humanity before Mankind” deals with accelerating the process of overall development in the developing countries of the world, laying specific emphasis on countries with special needs, vulnerabilities and development changes. This MUN will be a unique convention, with delegates from all round the world bringing a host of new ideas and opinions which will give birth to a new generation of strong, confident and above all compassionate leaders.
+</p><p class="committee-topics" style="text-align:justify; padding: 8px;">
+
+I take this opportunity to express my best wishes to the delegates from all over the world for their participation & learning in this conference and wish them a pleasant stay in Delhi/NCR.
+
+</p><p class="committee-topics" style="text-align:justify; padding: 8px;">
+
+I compliment the meticulous hard work of the organising committee members and wish AMIMUN’16 a great success!
+</p>
+</td>
+
+</tr>
+</table>
+
+
+
+
+ </p>	</ul></li>	
+
+
+
+
+
+	 <a class="anchor" id="4"></a><li>		<a style="cursor:pointer;text-align:center;" onClick="toggle('node-4')"> Dr. Alpana Kakkar, Deputy Dean Student Welfare - AUUP and Chairperson - AMIMUN'16
+ </a>		<ul class='committee-topics' id='node-4'>      <p class="committee-topics" style="padding: 8px;">
+
+<table>
+<tr>
+<td>
+<img style="padding:271px; padding-top: 15px;
+padding-bottom:0px;" width="267" height="272" src="nov1_images/alpana.jpg"></img>
+ </td>
+</tr>
+<td>
+
+
+<p class="committee-topics" style="text-align:justify; padding: 8px;">
+Greetings! </p>
+<p class="committee-topics" style="text-align:justify; padding: 8px;">
+I feel so elated and honoured to pen down this message to welcome you all to the 5th Amity International Model United Nations Conference. This year at AMIMUN, is special for us as we celebrate the 5 years of extraordinary debating and deliberations.
+
+</p><p class="committee-topics" style="text-align:justify; padding: 8px;">
+
+After 4 years of such high standard discussions wherein delegates indulged in debates and tried to find solutions for world problems, we are glad to bring to you the 5th edition. This year’s theme, “<b>Putting Humanity before Mankind</b>” deals with accelerating the process of overall development in the developing countries of the world, laying specific emphasis on countries with special needs, vulnerabilities and development changes. The theme focuses on letting Humanity take a step ahead of Mankind. Given the difficult times we live in, this theme becomes relevant and special cognizance has to be taken. 
+
+</p>
+<p class="committee-topics" style="text-align:justify; padding: 8px;">
+
+This year’s Conference is a celebration of the 5 years of AMIMUN. We are glad to introduce our Advisory Panel for the first time as part of the Conference which comprises persons of eminence including diplomats, social thinkers and people of expertise in the field. We are also extremely honoured to have on board  Ambassadors and top diplomats from different countries, social activists, personages from the political spectrum, diplomats, various NGOs and social organisations for our Conference which has made it more inclusive and grand in its own nature. Our attempt to make the Conference socially relevant and inclusive has been successful. I feel so happy to share this with you. 
+
+</p><p class="committee-topics" style="text-align:justify; padding: 8px;">
+
+Its a continuous effort at Amity University to create an environment for healthy debating which not only inculcates a sense of information and research but also a sense of belongingness and sensitivity towards critical issues that concern the contemporary world. This time AMIMUN has not only become inclusive but has grown grand in stature and standards because of its associations and participations which are from around the globe. The event this time, as part of our celebration has attracted huge attention from the education circuit and requests for more registrations have poured in. We are extremely glad to have such interests on board.
+
+
+</p><p class="committee-topics" style="text-align:justify; padding: 8px;">
+
+As the Chairperson of AMIMUN’16, I take this opportunity to express my best wishes to all the global participants that would be a part of this conference. I assure you that this would be among one of the best events to be witnessed by you. An event which would be unparallel and unique its approach and high in its standards. An event which would be high on fervour and fiery debating. An event which would at the end, strive to find a solution to critical issues through intellect. I welcome you to be a part of the extravaganza. 
+
+</p><p class="committee-topics" style="text-align:justify; padding: 8px;">
+
+We look forward to host you in January! <br/>
+Best Wishes !
+
+
+</p><p class="committee-topics" style="text-align:justify; padding: 8px;">
+
+</p>
+</td>
+
+</tr>
+</table>
+
+
+
+
+ </p>	</ul></li>	
+
+
+
+
+
+  
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+  
+ 
+ 
+ 
+			</ul>
+		
+		</div>
+		
+        
+	</div>
+	
+</section>
+
+</body>
+
+<footer id="footer">	<p>		<a href="https://twitter.com/Amity_Amimun"> <img src="images/32.png"><span>Follow us on Twitter</span></a>		<a href="https://www.facebook.com/amitymun"> <img src="images/32f.png"><span>Like us on Facebook</span></a> <img src="images/instagram.png">	<a href="https://instagram.com/amity_amimun"><span>Follow us on Instagram</span>  </a>	<br>		Copyright &copy 2015 <a href="http://www.amity.edu/">Amity University Noida</a> India 		<br>				 <br>  </p></footer>

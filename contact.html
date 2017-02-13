@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+
+<head>
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+	
+	<!-- CSS -->
+<link rel="stylesheet" type="text/css" media="all" href="style.css">
+	<link rel="icon" type="images/x-icon" href="images/title.ico">
+		
+	<!-- Meta & Site Info -->
+	<title> AMIMUN 2016 </title>
+	
+	<meta name="description" content="Amity International Model United Nations">
+	<meta name="theme-color" content="#01458e">
+	<meta id="viewport" name="viewport" content="width=device-width">
+	<!-- Enforces minimum width of viewport to 600 -->
+	<script>
+		window.onload = function(){
+			if(window.innerWidth<600){
+				console.log('viewport fixed at 600');
+				var viewport = document.getElementById('viewport');
+				viewport.setAttribute('content','width=600');
+				document.getElementById('radcam-slide').setAttribute("style","height:"+window.innerHeight+"px");
+			}
+		}
+	</script>
+	
+	<!-- JS -->
+	<script src = "js/functions.js"> </script>
+	<script src = "js/modernizr.js"> </script>
+	
+	
+	<!-- jQuery -->
+	<script src="../ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"> </script>
+	
+	<!-- Smooth Scrolling Script -->
+	<script>
+		$(function() {
+			$('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html,body').animate({
+							scrollTop: target.offset().top
+						}, 1000);
+						return false;
+					}
+				}
+			});
+		});
+	</script>
+	
+	<!-- Pre-load Images -->
+	<img src="images/menu-logo-blue.png" style="display: none;">
+	<img src="images/pdf_blue.png" style="display: none;">
+</head>
+
+<nav id='menubar'>
+	<div class = 'menuwrapper'>
+		
+		<a href="index.html" target="_parent">
+			<img src = "images/menu-logo.png" width="59px" height="50px" onMouseOver="blueLogo(this);" onMouseOut="whiteLogo(this);">
+		</a>
+		
+		
+
+        <ul class="menulist">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li class="dropdownitem">
+                <label>About Us</label>
+
+
+                <ul class="dropdownlist">
+                    <li><a href="about-home.html">About AMIMUN</a></li>
+
+                    <li><a href="about-amity.html">About Amity</a></li>
+
+                    <li><a href="about-msg.html">Messages</a></li>
+
+
+
+                    <li><a href="about-advisory.html">Advisory Board</a></li>
+
+
+                    <li><a href="about-secretariat.html">Secretariat</a></li>
+                </ul>
+
+
+            </li>
+
+            <li class="dropdownitem">
+                <label>Apply</label>
+                <ul class="dropdownlist">
+                    <li><a href="DelegateForm.aspx">Delegate application</a></li>
+                    <li><a href="IPForm.aspx">International Press application</a></li>
+                </ul>
+
+
+            </li>
+            <li class="dropdownitem">
+                <label>Committees</label>
+                <ul class="dropdownlist">
+                    <li><a href="prep-committees.html#3" onClick="committeeClick('node-3')">Disarmament and International Security Committee</a></li>
+
+
+                    <li><a href="prep-committees.html#7" onClick="committeeClick('node-7')">Economic and Financial Affairs Council</a></li>
+
+                    <li><a href="prep-committees.html#4" onClick="committeeClick('node-4')">Social, Cultural and Humanitarian Committee</a></li>
+                    <li><a href="prep-committees.html#6" onClick="committeeClick('node-6')">United Nations High Commission for Refugees</a></li>
+
+                    <li>
+                        <a href="prep-committees.html#1" onClick="committeeClick('node-1')">
+                            African Union - Peace and Security Council
+                        </a>
+                    </li>
+
+
+                    <li><a href="prep-committees.html#2" onClick="committeeClick('node-2')">Organisation of Islamic Cooperation</a></li>
+
+
+                    <li><a href="prep-committees.html#5" onClick="committeeClick('node-5')">United Nations Security Council</a></li>
+
+                </ul>
+            </li>
+
+
+
+
+            <li class="dropdownitem">
+                <label>Resources</label>
+                <ul class="dropdownlist">
+                    <li><a href="allot.html">Allotments</a></li> <li><a href="bank.html">Payment Details</a></li>
+
+                    <li><a href="background-guide.html">Background Guides</a></li>
+
+                    <li><a href="venue.html">Venue</a></li>
+
+                    <li><a href="schedule.html">Schedule</a></li>
+
+                </ul>
+
+            </li>
+
+            <li>
+                <a href="club.html">AMIMUN Club</a>
+            </li>
+
+            <li><a href="contact.html">Contact Us</a></li>
+
+        </ul>
+		
+		
+		
+	</div>
+</nav>							<body onLoad="stretch_footer(); count(); resizeCommitteeWrapper(); handleCommitteeClick();" onresize = "stretch_footer(); resizeCommitteeWrapper()" style="background: url('images/backgrounds/background3.jpg'); ">
+<section class = 'oxwrapper'>
+	
+	<div class="oxcontent" style="margin-left: 20px;">
+	
+		<h1 align=center> Contact Us </h1>
+	
+		<p>The AMIMUN Secretariat is always available &amp; happy to answer any of your enquiries:</p>
+		<p>Thank you for your interest in Amity International Model United Nations.
+
+Our team is happy to help with any questions relating to our conference. We 
+
+also welcome suggestions for improving AMIMUN. We look forward to 
+
+hearing from you!</p>
+		<h4>Key Contacts</h4>
+
+
+	<p><strong>Chief de Cabinet: Dr. Alpana Kakkar</strong><br>
+		
+	
+		<a href="mailto:akakkar@amity.edu">akakkar@amity.edu</a> - 
+            <strong>+91 9810346724</strong>
+
+        </p>
+		
+		
+<hr>
+
+
+		
+		<p><strong>Secretary General: Pritika Kohli </strong><br>
+		
+		
+		<a href="mailto:pritika.kohli@student.amity.edu">pritika.kohli@student.amity.edu</a> - 
+            <strong>+91 9560012028</strong>
+
+        </p>
+		
+		
+<hr>
+
+		
+		<p><strong> Deputy Secretary General: Gurmehak Mann</strong>	
+		<br>
+		
+		<a href="mailto:gurmehak.mann@student.amity.edu">gurmehak.mann@student.amity.edu</a> - <strong>+91 9650429991</strong>
+        
+        </p>
+
+<hr>
+		
+		
+		<p><strong> Director General: Mohd. Talha Khan</strong>	
+		<br>
+		
+		<a href="mailto:mohd.khan19@student.amity.edu">mohd.khan19@student.amity.edu</a> - <strong>+91 9871578666</strong> </p>
+
+<hr>
+		
+		<p><strong> Charge d'Affaires: Palac Chhabra</strong>	
+		<br>
+		
+		<a href="mailto:palac.chhabra@student.amity.edu">palac.chhabra@student.amity.edu</a> - <strong>+91 8375022497</strong></p>
+
+<hr>
+		
+		<p><strong> Under Secretary General for Delegate Affairs: Amlaan Bhoi</strong>	
+		<br>
+		
+		<a href="mailto:amlaan.bhoi@student.amity.edu">amlaan.bhoi@student.amity.edu</a> - <strong>+91 8800731094</strong></p>
+		
+
+<hr>
+		
+		<p><strong>Under Secretary General for International Press: Pankit Arora </strong>
+		<br>
+		
+		
+		<a href="mailto:pankit.arora@student.amity.edu">pankit.arora@student.amity.edu</a> - <strong>+91 9818895540</strong>
+		
+		<p><strong>Under Secretary General for Finance: Rishabh Garg </strong>	<br>
+		
+		
+		<a href="mailto:rishabh.garg2@student.amity.edu">rishabh.garg2@student.amity.edu</a> - <strong>+91 9654610846</strong></p>
+
+
+<hr>
+		
+		<p><strong>Head Web Operations: Athul Jayaram </strong>	<br>
+		
+		
+		<a href="mailto:athul.jayaram@student.amity.edu">athul.jayaram@student.amity.edu</a> - <strong>+91 8285188306</strong></p>
+		
+
+<hr>
+		
+		<p><strong>Under Director General for Sponsorship: Karan Patel</strong>	
+	<br>	
+		
+		<a href="mailto:karan.patel@student.amity.edu">karan.patel@student.amity.edu</a> - <strong>+91 9873891125</strong></p>
+		
+
+<hr>
+
+		<p><strong>Under Director General for Hospitality: Nalin Panwar</strong>	
+	<br>	
+		
+		<a href="mailto:nalin.panwar@student.amity.edu">nalin.panwar@student@student.amity.edu</a> - <strong>+91 8447346514</strong></p>
+
+<hr>
+		
+		<p><strong>Under Director General for Content Management: Nikhita Wadhawan </strong>	<br>	
+		
+		
+		<a href="mailto:nikhita.wadhawan@student.amity.edu">nikhita.wadhawan@student.amity.edu</a> - <strong>+91 9990524111</strong></p>
+
+<hr>
+		
+		
+		<p><strong>Under Director General for Logistics: Samarth Mahajan </strong><br>
+		
+		
+		<a href="mailto:samarth.mahajan@student.amity.edu">samarth.mahajan@student.amity.edu</a> - <strong>+91 9953458910</strong></p>
+		
+
+<hr>
+
+
+		<p><strong>Under Director General for Operations: Vidur Gupta </strong>	<br>	
+		
+		
+		<a href="mailto:vidur.gupta@student.amity.edu">vidur.gupta@student.amity.edu</a> - <strong>+91 9910238855</strong></p>
+
+
+<hr>
+
+
+
+<p><strong>Head Stage Management: Khushboo Narang</strong>	<br>
+		
+		
+		<a href="mailto:athul.jayaram@student.amity.edu">khusboo.narang@student.amity.edu</a> - <strong>+91 9896133837</strong></p>
+		
+
+<hr>
+
+
+
+
+
+
+
+		
+		
+		<p><strong>AMIMUN</strong><br>
+		<a href="mailto:amimun2016@gmail.com">amimun2016@gmail.com</a></p>
+		
+	</div>
+	
+</section>
+
+</body>
+
+<footer id="footer">	<p>		<a href="https://twitter.com/Amity_Amimun"> <img src="images/32.png"><span>Follow us on Twitter</span></a>		<a href="https://www.facebook.com/amitymun"> <img src="images/32f.png"><span>Like us on Facebook</span></a> <img src="images/instagram.png">	<a href="https://instagram.com/amity_amimun"><span>Follow us on Instagram</span>  </a>	<br>		Copyright &copy 2015 <a href="http://www.amity.edu/">Amity University Noida</a> India 		<br>			<br>  </p></footer>

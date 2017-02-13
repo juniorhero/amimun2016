@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+
+<head>
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" media="all" href="style.css">
+	<link rel="icon" type="images/x-icon" href="images/title.ico">
+	
+	<!-- PHP Includes -->
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60290601-1', 'auto');
+  ga('send', 'pageview');
+
+</script>	
+	<!-- Meta & Site Info -->
+	<title> AMIMUN 2016 </title>
+	
+	<meta name="description" content="Amity International Model United Nations">
+	<meta name="theme-color" content="#01458e">
+	<meta id="viewport" name="viewport" content="width=device-width">
+	<!-- Enforces minimum width of viewport to 600 -->
+	<script>
+		window.onload = function(){
+			if(window.innerWidth<600){
+				console.log('viewport fixed at 600');
+				var viewport = document.getElementById('viewport');
+				viewport.setAttribute('content','width=600');
+				document.getElementById('radcam-slide').setAttribute("style","height:"+window.innerHeight+"px");
+			}
+		}
+	</script>
+	
+	<!-- JS -->
+	<script src = "js/functions.js"> </script>
+	<script src = "js/modernizr.js"> </script>
+	
+	
+	<!-- jQuery -->
+	<script src="../ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"> </script>
+	
+	<!-- Smooth Scrolling Script -->
+	<script>
+		$(function() {
+			$('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html,body').animate({
+							scrollTop: target.offset().top
+						}, 1000);
+						return false;
+					}
+				}
+			});
+		});
+	</script>
+	
+	<!-- Pre-load Images -->
+	<img src="images/menu-logo-blue.png" style="display: none;">
+	<img src="images/pdf_blue.png" style="display: none;">
+</head>
+
+<nav id='menubar'>
+	<div class = 'menuwrapper'>
+		
+		<a href="index.html" target="_parent">
+			<img src = "images/menu-logo.png" width="59px" height="50px" onMouseOver="blueLogo(this);" onMouseOut="whiteLogo(this);">
+		</a>
+		
+		
+		
+        <ul class="menulist">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li class="dropdownitem">
+                <label>About Us</label>
+
+
+                <ul class="dropdownlist">
+                    <li><a href="about-home.html">About AMIMUN</a></li>
+
+                    <li><a href="about-amity.html">About Amity</a></li>
+
+                    <li><a href="about-msg.html">Messages</a></li>
+
+
+
+                    <li><a href="about-advisory.html">Advisory Board</a></li>
+
+
+                    <li><a href="about-secretariat.html">Secretariat</a></li>
+                </ul>
+
+
+            </li>
+
+            <li class="dropdownitem">
+                <label>Apply</label>
+                <ul class="dropdownlist">
+                    <li><a href="DelegateForm.aspx">Delegate application</a></li>
+                    <li><a href="IPForm.aspx">International Press application</a></li>
+                </ul>
+
+
+            </li>
+            <li class="dropdownitem">
+                <label>Committees</label>
+                <ul class="dropdownlist">
+                    <li><a href="prep-committees.html#3" onClick="committeeClick('node-3')">Disarmament and International Security Committee</a></li>
+
+
+                    <li><a href="prep-committees.html#7" onClick="committeeClick('node-7')">Economic and Financial Affairs Council</a></li>
+
+                    <li><a href="prep-committees.html#4" onClick="committeeClick('node-4')">Social, Cultural and Humanitarian Committee</a></li>
+                    <li><a href="prep-committees.html#6" onClick="committeeClick('node-6')">United Nations High Commission for Refugees</a></li>
+
+                    <li>
+                        <a href="prep-committees.html#1" onClick="committeeClick('node-1')">
+                            African Union - Peace and Security Council
+                        </a>
+                    </li>
+
+
+                    <li><a href="prep-committees.html#2" onClick="committeeClick('node-2')">Organisation of Islamic Cooperation</a></li>
+
+
+                    <li><a href="prep-committees.html#5" onClick="committeeClick('node-5')">United Nations Security Council</a></li>
+
+                </ul>
+            </li>
+
+
+
+
+            <li class="dropdownitem">
+                <label>Resources</label>
+                <ul class="dropdownlist">
+                    <li><a href="allot.html">Allotments</a></li> <li><a href="bank.html">Payment Details</a></li>
+
+                    <li><a href="background-guide.html">Background Guides</a></li>
+
+                    <li><a href="venue.html">Venue</a></li>
+
+                    <li><a href="schedule.html">Schedule</a></li>
+
+                </ul>
+
+            </li>
+
+            <li>
+                <a href="club.html">AMIMUN Club</a>
+            </li>
+
+            <li><a href="contact.html">Contact Us</a></li>
+
+        </ul>	</div>
+</nav>							<body onLoad="stretch_footer(); count(); resizeCommitteeWrapper(); handleCommitteeClick();" onresize = "stretch_footer(); resizeCommitteeWrapper()" style="background: url('images/backgrounds/background2.jpg');">
+<section class = 'oxwrapper'>
+
+	<div class="oxcontent">
+	
+		<h1 align="center">AMIMUN'16 VENUE  </h1>
+	
+		
+	
+	<p>
+	All conference events will take place in <strong>Amity University</strong>. Amity University 
+
+is situated in <strong>Sector-125, Noida</strong>, on the <strong>Noida-Greater Noida Expressway</strong>. 
+
+
+		</p>
+		
+		<p>
+
+The nearest <strong>Metro station</strong> to the University is <strong>Botanical Garden</strong> Metro 
+
+Station. <strong>Shuttle service</strong> will be provided from the metro station to the 
+
+University and back for all participants.
+
+
+
+
+<div style="position: relative;
+padding-left: 32px;width:671px;overflow:hidden;height:496px;max-width:100%;"><div id="gmap-display" style="height:496px;width:671px;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Amity+University,+Noida,+Uttar+Pradesh,+India&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe></div><a class="google-maps-code" rel="nofollow" href="https://www.embed-map.com" id="auth-maps-data">embed-map.com</a><style>#gmap-display img{max-width:none!important;background:none!important;}</style></div>
+
+</p>
+
+
+	
+	</div>
+	
+</section>
+
+</body>
+
+<footer id="footer">	<p>		<a href="https://twitter.com/Amity_Amimun"> <img src="images/32.png"><span>Follow us on Twitter</span></a>		<a href="https://www.facebook.com/amitymun"> <img src="images/32f.png"><span>Like us on Facebook</span></a> <img src="images/instagram.png">	<a href="https://instagram.com/amity_amimun"><span>Follow us on Instagram</span>  </a>	<br>		Copyright &copy 2015 <a href="http://www.amity.edu/">Amity University Noida</a> India 		<br>					      <br>  </p></footer>
